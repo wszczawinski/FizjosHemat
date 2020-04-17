@@ -1,16 +1,14 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Logo from '..//images/FizjosHematLogo.svg';
-import Header from '../components/Header';
+
+import Layout from '../components/Layout';
 
 const indexPage = () => {
     return (
-        <div>
-            <Header />
+        <Layout>
             <p>FizjosHemat</p>
             <img src={Logo} alt="FizjosHemat Logo" />
-            <Link to="/contact">Contact me</Link>
-        </div>
+        </Layout>
     );
 };
 
