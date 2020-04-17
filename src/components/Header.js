@@ -1,20 +1,52 @@
 import React from 'react';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
+import styles from './Header.module.scss';
 
 const Header = () => {
     return (
-        <header>
-            <h1>Fizjos</h1>
+        <header className={styles.header}>
             <nav>
-                <ul>
+                <ul className={styles.navList}>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <Link
+                            className={styles.navItem}
+                            activeClassName={styles.activeNavItem}
+                            to="/"
+                        >
+                            Metody
+                        </Link>
                     </li>
                     <li>
-                        <Link to='/blog'>Blog</Link>
+                        <Link
+                            className={styles.navItem}
+                            activeClassName={styles.activeNavItem}
+                            to="/blog"
+                        >
+                            Blog
+                        </Link>
                     </li>
                     <li>
-                        <Link to='/contact'>Contact</Link>
+                        <Link className={styles.title} to="/">
+                            FizjosHemat
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={styles.navItem}
+                            activeClassName={styles.activeNavItem}
+                            to="/blog"
+                        >
+                            O Nas
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={styles.navItem}
+                            activeClassName={styles.activeNavItem}
+                            to="/contact"
+                        >
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </nav>
