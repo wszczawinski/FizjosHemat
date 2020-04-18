@@ -11,16 +11,16 @@ const Header = () => {
                         <Link
                             className={styles.navItem}
                             activeClassName={styles.activeNavItem}
-                            to="/"
+                            to="/about"
                         >
-                            Metody
+                            O nas
                         </Link>
                     </li>
                     <li>
                         <Link
                             className={styles.navItem}
                             activeClassName={styles.activeNavItem}
-                            to="/"
+                            to="/blog"
                         >
                             Blog
                         </Link>
@@ -34,16 +34,16 @@ const Header = () => {
                         <Link
                             className={styles.navItem}
                             activeClassName={styles.activeNavItem}
-                            to="/"
+                            to="/uslugi"
                         >
-                            O Nas
+                            Usługi
                         </Link>
                     </li>
                     <li>
                         <Link
                             className={styles.navItem}
                             activeClassName={styles.activeNavItem}
-                            to="/"
+                            to="/contact"
                         >
                             Contact
                         </Link>
