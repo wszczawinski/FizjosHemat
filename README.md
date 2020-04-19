@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="www.FizjosHemat.pl">
+  <a href="http://www.FizjosHemat.pl">
     <img alt="Fizjos-Hemat" src="https://github.com/wszczawinski/FizjosHemat/blob/master/src/images/FizjosHematLogo.svg" width="80" />
   </a>
 </p>

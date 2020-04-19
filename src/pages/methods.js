@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-const methodsPage = () => {
+const MethodsPage = () => {
     return (
         <Layout>
-            <h1>Blog page</h1>
+            <h1>Usługi</h1>
         </Layout>
     );
 };
 
-export default methodsPage;
+export default MethodsPage;

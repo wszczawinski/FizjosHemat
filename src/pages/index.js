@@ -4,7 +4,7 @@ import styles from './index.module.scss';
 import Layout from '../components/Layout';
 import Logo from '..//images/FizjosHematLogo.svg';
 
-const indexPage = () => {
+const IndexPage = () => {
     return (
         <Layout>
             <div className={styles.home}>
@@ -14,4 +14,4 @@ const indexPage = () => {
     );
 };
 
-export default indexPage;
+export default IndexPage;
