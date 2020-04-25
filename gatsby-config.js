@@ -10,7 +10,7 @@ module.exports = {
                 lang: `en`,
                 display: 'standalone',
                 start_url: `/`,
-                background_color: ` #f7f0eb;`,
+                background_color: `#f7f0eb`,
                 theme_color: `#fff`,
                 icon: `src/images/FizjosHematFavicon.png`,
                 icon_options: {

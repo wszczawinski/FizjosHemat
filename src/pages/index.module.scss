@@ -5,7 +5,7 @@ html {
 
 .parallax {
     /* The image used */
-    background-image: url("../images/Desktop.svg");
+    background-image: url('../images/Desktop.svg');
 
     /* Full height */
     height: 90vh;
@@ -18,11 +18,26 @@ html {
 }
 
 .home {
-    height: 400px;
-}
-
-.logo {
-    width: 90%;
-    max-width: 450px;
-    align-self: center;
+    justify-content: center;
+    section {
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid red;
+    }
+    .about {
+        .about{
+            color: black;
+        }
+        a {
+            background-color: 	#f47014;
+            text-decoration: none;
+            color: white;
+            padding: 1rem 0.5rem;
+            border-radius: 50%;
+            box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+        }
+    }
 }
