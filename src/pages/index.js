@@ -7,9 +7,11 @@ import Logo from '..//images/FizjosHematLogo.svg';
 const IndexPage = () => {
     return (
         <Layout>
-            <div className={styles.home}>
-                <img className={styles.logo} src={Logo} alt="FizjosHemat Logo" />
+            <div className={styles.parallax}>
             </div>
+            <section className={styles.home}>
+
+            </section>
         </Layout>
     );
 };
