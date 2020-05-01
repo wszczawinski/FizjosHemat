@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MethodsSection.module.scss';
+import styles from './index.module.scss';
 
 export const MethodsSection = () => {
     return (

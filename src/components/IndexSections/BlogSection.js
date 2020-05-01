@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './BlogSection.module.scss';
+import styles from './index.module.scss';
 
 export const BlogSection = () => {
     return (
