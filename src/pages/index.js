@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-import Layout from '../components/Layout';
+import { AboutSection, BlogSection, MethodsSection, Layout } from '../components';
 
 const IndexPage = () => {
     return (
@@ -9,19 +9,13 @@ const IndexPage = () => {
             <div className={styles.parallax}></div>
             <main className={styles.home}>
                 <section className={styles.about}>
-                    <article>Ola about</article>
-                    <div className={styles.center}>
-                        <div className={styles.line}></div>
-                        <button href="/about/">O nas</button>
-                        <div className={styles.line}></div>
-                    </div>
-                    <article>Maciek about</article>
+                    <AboutSection />
                 </section>
                 <section className={styles.blog}>
-                    <hr />
+                    <BlogSection />
                 </section>
                 <section className={styles.methods}>
-                    <hr />
+                    <MethodsSection />
                 </section>
             </main>
         </Layout>
