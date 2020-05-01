@@ -21,6 +21,9 @@ html {
     justify-content: center;
 
     section {
+        background: url('../images/lineBackground.svg');
+        background-size: cover;
+        background-position: center;
         height: 90vh;
         display: flex;
         flex-direction: row;
