@@ -1,11 +1,16 @@
+.aboutArticle {
+    width: 40%;
+    text-align: center;
+}
+
 .btn {
-    background-color: #f47014;
+    border: solid 1.5px #f47014;
+    background: white;
     text-decoration: none;
     outline: none;
-    border: none;
-    color: white;
-    padding: 1rem 0.5rem;
-    border-radius: 50%;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
 }
 

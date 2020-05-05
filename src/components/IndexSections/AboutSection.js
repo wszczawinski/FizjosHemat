@@ -4,11 +4,11 @@ import styles from './index.module.scss';
 export const AboutSection = () => {
     return (
         <>
-            <article>Ola about</article>
+            <article className={styles.aboutArticle}>Ola about</article>
             <button className={styles.btn} href="/about/">
                 O nas
             </button>
-            <article>Maciek about</article>
+            <article className={styles.aboutArticle}>Maciek about</article>
         </>
     );
 };
