@@ -5,8 +5,23 @@
 
 .aboutArticle {
     font-family: 'Rationale';
-    width: 40%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
+@media (min-width: 500px) {
+    .aboutArticle {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .aboutArticle {
+        flex-direction: row;
+    }
 }
 
 .aboutImage {
