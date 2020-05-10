@@ -1,4 +1,10 @@
+@font-face {
+    font-family: 'Rationale';
+    src: url('../../fonts/Rationale-Regular.ttf');
+}
+
 .header {
+    font-family: 'Rationale';
     padding: 0;
     position: fixed;
     top: 0;
@@ -8,7 +14,6 @@
 }
 
 .title {
-    font-family: fantasy;
     color: black;
     font-size: 2rem;
     text-decoration: none;

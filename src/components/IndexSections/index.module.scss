@@ -1,9 +1,20 @@
+@font-face {
+    font-family: 'Rationale';
+    src: url('../../fonts/Rationale-Regular.ttf');
+}
+
 .aboutArticle {
+    font-family: 'Rationale';
     width: 40%;
     text-align: center;
 }
 
+.aboutImage {
+    width: 60%;
+}
+
 .btn {
+    margin: 2.5%;
     border: solid 1.5px #f47014;
     background: white;
     text-decoration: none;
