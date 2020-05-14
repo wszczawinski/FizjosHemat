@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './index.module.scss';
-import MaciekImage from '../../images/Fizjo-maciek.png';
+import MaciekImage from '../../images/Maciek-blue.png';
+import OlaImage from '../../images/Ola-black-1.png';
 
 export const AboutSection = () => {
     return (
         <>
             <article className={styles.aboutArticle}>
-                <img src={MaciekImage} alt="" className={styles.aboutImage} />
+                <img src={OlaImage} alt="" className={styles.aboutImage} />
                 <div className={styles.aboutDescription}>
-                    <h3 className={styles.aboutTitle}>Mgr Maciek</h3>
+                    <h3 className={styles.aboutTitle}>Mgr Ola</h3>
                     <p className={styles.aboutText}>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Architecto tenetur aperiam sequi, consequuntur, tempora sed, nisi

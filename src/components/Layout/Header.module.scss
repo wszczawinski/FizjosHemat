@@ -3,8 +3,18 @@
     src: url('../../fonts/Rationale-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Holtwood';
+    src: url('../../fonts/HoltwoodOneSC-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('../../fonts/impact.ttf');
+}
+
 .header {
-    font-family: 'Rationale';
+    font-family: 'Rationale', sans-serif;
     padding: 0;
     position: fixed;
     top: 0;
@@ -18,6 +28,7 @@
     font-size: 2rem;
     text-decoration: none;
     margin: 0 1rem;
+    font-family: 'Holtwood', sans-serif;
 }
 
 .nav-list {
@@ -29,10 +40,12 @@
 }
 
 .nav-item {
-    color: grey;
-    font-size: 0.9rem;
+    color: black;
+    font-size: 1.1rem;
     margin: 0 1.3rem;
     text-decoration: none;
+    font-family: 'Ipmact', sans-serif;
+    font-weight: bolder;
 }
 
 .nav-item:hover {
