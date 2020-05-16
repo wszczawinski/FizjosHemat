@@ -1,20 +1,19 @@
 @font-face {
-    font-family: 'Rationale';
-    src: url('../../fonts/Rationale-Regular.ttf');
-}
-
-@font-face {
     font-family: 'Holtwood';
     src: url('../../fonts/HoltwoodOneSC-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Impact';
-    src: url('../../fonts/impact.ttf');
+    font-family: 'Impacted';
+    src: url('../../fonts/impacted.ttf');
+}
+
+b {
+    color: red;
+    font-weight: 500;
 }
 
 .header {
-    font-family: 'Rationale', sans-serif;
     padding: 0;
     position: fixed;
     top: 0;
@@ -44,7 +43,7 @@
     font-size: 1.1rem;
     margin: 0 1.3rem;
     text-decoration: none;
-    font-family: 'Ipmact', sans-serif;
+    font-family: 'Impacted', sans-serif;
     font-weight: bolder;
 }
 

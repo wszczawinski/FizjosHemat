@@ -5,7 +5,7 @@ html {
 
 .parallax {
     /* The image used */
-    background-image: url('../images/smaller3.svg');
+    background-image: url('../images/Logo-Tablet.svg');
 
     /* Full height */
     height: 90vh;
@@ -31,7 +31,6 @@ html {
 
     @media (min-width: 500px) {
         section {
-            background: url('../images/lineBackground.svg');
             background-size: cover;
             background-position: center;
             height: 90vh;
