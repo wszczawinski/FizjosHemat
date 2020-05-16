@@ -27,7 +27,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link className={styles.title} to="/">
-                            FizjosHemat
+                            <b>F</b>izjos<b>H</b>emat
                         </Link>
                     </li>
                     <li>
