@@ -8,9 +8,11 @@ export const AboutSection = () => {
         <>
             <article className={styles.aboutArticle}>
                 <img src={OlaImage} alt="" className={styles.aboutImage} />
-                <div className={styles.aboutDescription}>
+                <div
+                    className={`${styles.aboutDescription} ${styles.aboutDescriptionLeft}`}
+                >
                     <h3 className={styles.aboutTitle}>mgr Aleksandra Bulińska</h3>
-                    <p className={`${styles.aboutText}`}>
+                    <p className={styles.aboutText}>
                         Kierują się holistycznym spojrzeniem, dbam nie tylko o naprawienie
                         problemu fizycznego, ale również zwracam baczną uwagę na
                         poprawienie ogólnej jakości życia pacjenta. Największym wyzwaniem
@@ -25,7 +27,9 @@ export const AboutSection = () => {
                 O nas
             </button>
             <article className={styles.aboutArticle}>
-                <div className={styles.aboutDescription}>
+                <div
+                    className={`${styles.aboutDescription} ${styles.aboutDescriptionRight}`}
+                >
                     <h3 className={styles.aboutTitle}>mgr Maciej Koktysz</h3>
                     <p className={styles.aboutText}>
                         Jestem pasjonatem ruchu i możliwości ludzkiego ciała. Do każdego

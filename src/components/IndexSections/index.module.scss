@@ -29,11 +29,21 @@
 
 .aboutImage {
     width: 60%;
+    margin: 15px 0;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
     .aboutArticle {
         width: 40%;
+        margin: 0 15px;
+    }
+
+    .aboutTitle {
+        font-size: 1rem;
+    }
+
+    .aboutText {
+        font-size: 0.9rem;
     }
 }
 
@@ -41,8 +51,27 @@
     .aboutArticle {
         flex-direction: row;
     }
+
+    .aboutTitle {
+        font-size: 1.1rem;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+    }
+
     .aboutImage {
         width: 40%;
+    }
+
+    .aboutDescriptionLeft {
+        margin-bottom: 8vw;
+        margin-left: 20px;
+    }
+
+    .aboutDescriptionRight {
+        margin-top: 8vw;
+        margin-right: 20px;
     }
 }
 
@@ -77,12 +106,6 @@
 
 .btn:active {
     box-shadow: 0 0 15px 5px rgba(244, 115, 21, 0.85);
-}
-
-@media (min-width: 1100px) {
-    .btn {
-        margin: 20px;
-    }
 }
 
 .methodSection {
