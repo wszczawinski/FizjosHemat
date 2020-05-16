@@ -26,12 +26,23 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid #f47014;
+    }
+
+    .about {
+        background: url('../images/bg-first.svg') center no-repeat;
+        background-size: contain;
+    }
+    .blog {
+        background: url('../images/bg-second.svg') center no-repeat;
+        background-size: contain;
+    }
+    .methods {
+        background: url('../images/bg-third.svg') center no-repeat;
+        background-size: contain;
     }
 
     @media (min-width: 500px) {
         section {
-            background: url('../images/lineBackground.svg');
             background-size: cover;
             background-position: center;
             height: 90vh;
