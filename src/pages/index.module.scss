@@ -8,13 +8,29 @@ html {
     background-image: url('../images/Logo-Tablet.svg');
 
     /* Full height */
-    height: 90vh;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .arrows {
+        position: fixed;
+        bottom: 50px;
+        left: 49%;
+        z-index: -200;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 20px;
+            border-bottom: 1px solid #000;
+            border-right: 1px solid #000;
+            transform: rotate(45deg);
+        }
+    }
 }
 
 .home {
