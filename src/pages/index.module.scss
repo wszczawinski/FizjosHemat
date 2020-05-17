@@ -45,16 +45,16 @@ html {
     }
 
     .about {
-        background: url('../images/bg-first.svg') center no-repeat;
-        background-size: contain;
+        background: url('../images/bg-1.svg') center no-repeat;
+        background-size: cover;
     }
     .blog {
-        background: url('../images/bg-second.svg') center no-repeat;
-        background-size: contain;
+        background: url('../images/bg-2.svg') center no-repeat;
+        background-size: cover;
     }
     .methods {
-        background: url('../images/bg-third.svg') center no-repeat;
-        background-size: contain;
+        background: url('../images/bg-3.svg') center no-repeat;
+        background-size: cover;
     }
 
     @media (min-width: 500px) {
