@@ -1,11 +1,12 @@
 body,
 html {
     height: 100vw;
+    margin: 0;
 }
 
 .parallax {
     /* The image used */
-    background-image: url('../images/Logo-Tablet.svg');
+    background-image: url('../images/FizjosHematLogo.svg');
 
     /* Full height */
     height: 100vh;
@@ -14,8 +15,17 @@ html {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
+    @media (min-width: 500px) {
+        background-image: url('../images/Logo-Tablet.svg');
+    }
+
+    @media (min-width: 1000px) {
+        background-image: url('../images/Logo-Desktop.svg');
+    }
 }
+
 .arrows {
     position: fixed;
     bottom: 60px;
@@ -25,7 +35,6 @@ html {
     span {
         display: block;
         width: 20px;
-
         height: 20px;
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;
