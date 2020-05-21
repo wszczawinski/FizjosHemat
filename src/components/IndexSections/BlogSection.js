@@ -5,9 +5,9 @@ export const BlogSection = () => {
     return (
         <>
             <article>Ola about</article>
-            <button className={styles.btn} href="/about/">
-                O nas
-            </button>
+            <a className={styles.btn} href="/blog/">
+                Blog
+            </a>
             <article>Maciek about</article>
         </>
     );

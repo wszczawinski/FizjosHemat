@@ -12,6 +12,7 @@ function MethodElement({ img, title, contentText, side }) {
                 <div className={styles.title}>{title}</div>
                 <div className={styles.content}>{contentText}</div>
             </div>
+            
             {side === 'right' && <div className={styles.imageContainer}>
                 <img src={img} alt='' className={styles.image} />
             </div>}

@@ -23,9 +23,9 @@ export const AboutSection = () => {
                     </p>
                 </div>
             </article>
-            <button className={styles.btn} href="/about/">
+            <a className={styles.btn} href="/about/">
                 O nas
-            </button>
+            </a>
             <article className={styles.aboutArticle}>
                 <div
                     className={`${styles.aboutDescription} ${styles.aboutDescriptionRight}`}
