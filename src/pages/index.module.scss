@@ -1,6 +1,7 @@
 body,
 html {
     height: 100vw;
+    margin: 0;
 }
 
 .parallax {
@@ -19,6 +20,7 @@ html {
         background-size: cover;
     }
 }
+
 .arrows {
     position: fixed;
     bottom: 60px;
@@ -28,7 +30,6 @@ html {
     span {
         display: block;
         width: 20px;
-
         height: 20px;
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;

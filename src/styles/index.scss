@@ -1,16 +1,16 @@
 @font-face {
-    font-family: 'Rationale';
-    src: url('./fonts/Rationale-Regular.ttf');
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
-    font-family: 'Rationale', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

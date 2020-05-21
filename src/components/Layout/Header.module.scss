@@ -1,16 +1,11 @@
 @font-face {
-    font-family: 'Holtwood';
-    src: url('../../fonts/HoltwoodOneSC-Regular.ttf');
+    font-family: 'Impacted';
+    src: url('../../fonts/Impacted.ttf');
 }
 
 @font-face {
-    font-family: 'Impacted';
-    src: url('../../fonts/impacted.ttf');
-}
-
-b {
-    color: red;
-    font-weight: 500;
+    font-family: 'Holtwood';
+    src: url('../../fonts/HoltwoodOneSC-Regular.ttf');
 }
 
 .header {
@@ -23,11 +18,16 @@ b {
 }
 
 .title {
-    color: black;
+    color: gray;
     font-size: 2rem;
     text-decoration: none;
     margin: 0 1rem;
     font-family: 'Holtwood', sans-serif;
+
+    b {
+        color: #f25c19;
+        font-weight: 500;
+    }
 }
 
 .nav-list {
@@ -39,7 +39,7 @@ b {
 }
 
 .nav-item {
-    color: black;
+    color: #555;
     font-size: 1.1rem;
     margin: 0 1.3rem;
     text-decoration: none;
@@ -48,9 +48,9 @@ b {
 }
 
 .nav-item:hover {
-    color: lightgray;
+    color: gray;
 }
 
 .active-nav-item {
-    color: lightgray;
+    color: gray;
 }
