@@ -4,17 +4,20 @@ html {
 }
 
 .parallax {
-    /* The image used */
-    background-image: url('../images/Logo-Tablet.svg');
-
-    /* Full height */
+    background-image: url('../images/mobile-bg.svg');
     height: 100vh;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+
+    @media (min-width: 500px){
+        background-image: url('../images/tablet-bg.svg');
+    }
+    @media (min-width: 1200px){
+        background-image: url('../images/desktop-bg.svg');
+        background-size: cover;
+    }
 }
 .arrows {
     position: fixed;
