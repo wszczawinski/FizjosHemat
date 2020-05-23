@@ -1,11 +1,11 @@
 import React from 'react';
-
 import MethodElement from './MethodsSection/MethodElement';
 import method1 from '../../images/physical-therapy.svg';
 import method2 from '../../images/physiotherapy.svg';
 import method3 from '../../images/physiotherapy2.svg';
 import method4 from '../../images/rehabilitation.svg';
-import styles from './index.module.scss';
+import styles from './MethodsSection.module.scss';
+import { Button } from './Button';
 
 export const MethodsSection = () => {
     return (
@@ -30,9 +30,7 @@ export const MethodsSection = () => {
                     side="left"
                 />
             </article>
-            <a className={styles.btn} href="/methods/">
-                Metody
-            </a>
+            <Button text={'Metody'} link={'/mehods/'} />
             <article className={styles.rightSideMethods}>
                 <MethodElement
                     title="Metoda"

@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './index.module.scss';
+import styles from './BlogSection.module.scss';
+import { Button } from './Button';
 import blogImage from '../../images/guy.jpg';
 
 export const BlogSection = () => {
@@ -15,9 +16,7 @@ export const BlogSection = () => {
                     alias quidem.
                 </p>
             </article>
-            <a className={styles.btn} href="/blog/">
-                Blog
-            </a>
+            <Button text={'Blog'} link={'/blog/'} />
             <article className={styles.blogArticle}>
                 <img className={styles.blogImage} src={blogImage} alt="" />
                 <h3 className={styles.blogTitle}>Blog</h3>
