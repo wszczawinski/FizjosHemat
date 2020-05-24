@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './index.module.scss';
+import styles from './AboutSection.module.scss';
+import { Button } from './Button';
 import MaciekImage from '../../images/Maciek-blue.png';
 import OlaImage from '../../images/Ola-black-1.png';
 
@@ -23,9 +24,7 @@ export const AboutSection = () => {
                     </p>
                 </div>
             </article>
-            <button className={styles.btn} href="/about/">
-                O nas
-            </button>
+            <Button text={'O nas'} link={'/about/'} />
             <article className={styles.aboutArticle}>
                 <div
                     className={`${styles.aboutDescription} ${styles.aboutDescriptionRight}`}

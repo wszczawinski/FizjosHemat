@@ -1,37 +1,50 @@
 import React from 'react';
-
 import MethodElement from './MethodsSection/MethodElement';
-import img from '../../images/Fizjo-maciek.png';
-import styles from './index.module.scss';
+import method1 from '../../images/physical-therapy.svg';
+import method2 from '../../images/physiotherapy.svg';
+import method3 from '../../images/physiotherapy2.svg';
+import method4 from '../../images/rehabilitation.svg';
+import styles from './MethodsSection.module.scss';
+import { Button } from './Button';
 
 export const MethodsSection = () => {
     return (
-        <div className={styles.methodSection}>
-            <div className={styles.leftSideMethods}>
+        <>
+            <article className={styles.leftSideMethods}>
                 <MethodElement
-                    title="tytuł"
-                    contentText="Lorem iphgve inGIe h gi hreiLGHlerhger ilNGIelhgie rgerhg ergh eiGFHeri;hg erh GUore;hg;iehr G"
-                    img={img} side="left" />
+                    title="Metoda"
+                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
+                    img={method2}
+                    side="left"
+                />
                 <MethodElement
-                    title="tytuł"
-                    contentText="Lorem iphgve inGIe h gi hreiLGHlerhger ilNGIelhgie rgerhg ergh eiGFHeri;hg erh GUore;hg;iehr G"
-                    img={img} side="left" />
+                    title="Metoda"
+                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
+                    img={method3}
+                    side="right"
+                />
                 <MethodElement
-                    title="tytuł"
-                    contentText="Lorem iphgve inGIe h gi hreiLGHlerhger ilNGIelhgie rgerhg ergh eiGFHeri;hg erh GUore;hg;iehr G"
-                    img={img} side="left" />
-            </div>
-            <div className={styles.rightSideMethods}>
+                    title="Metoda"
+                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
+                    img={method4}
+                    side="left"
+                />
+            </article>
+            <Button text={'Metody'} link={'/mehods/'} />
+            <article className={styles.rightSideMethods}>
                 <MethodElement
-                    title="tytuł"
-                    contentText="Lorem iphgve inGIe h gi hreiLGHlerhger ilNGIelhgie rgerhg ergh eiGFHeri;hg erh GUore;hg;iehr G"
-                    img={img} side="right" />
+                    title="Metoda"
+                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
+                    img={method1}
+                    side="right"
+                />
                 <MethodElement
-                    title="tytuł"
-                    contentText="Lorem iphgve inGIe h gi hreiLGHlerhger ilNGIelhgie rgerhg ergh eiGFHeri;hg erh GUore;hg;iehr G"
-                    img={img} side="right" />
-            </div>
-        </div>
-
+                    title="Metoda"
+                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
+                    img={method1}
+                    side="right"
+                />
+            </article>
+        </>
     );
 };
