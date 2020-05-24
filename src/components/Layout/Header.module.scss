@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'Impacted';
+    src: url('../../fonts/Impacted.ttf');
+}
+
+@font-face {
+    font-family: 'Holtwood';
+    src: url('../../fonts/HoltwoodOneSC-Regular.ttf');
+}
+
 .header {
-    padding: 2rem 0 2rem;
+    padding: 0;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -7,33 +17,114 @@
     z-index: 100;
 }
 
-.title {
-    font-family: fantasy;
-    color: black;
-    font-size: 2rem;
-    text-decoration: none;
-    margin: 0 1rem;
-}
-
-.nav-list {
+.navList {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style-type: none;
     margin: 0;
+    flex-wrap: wrap;
 }
 
-.nav-item {
-    color: grey;
-    font-size: 0.9rem;
-    margin: 0 1.3rem;
+.navCenter {
+    text-align: center;
+    order: 1;
+    width: 100%;
+    margin-bottom: 0.6rem;
+}
+
+.navLeft {
+    order: 2;
+    margin-bottom: 0.5rem;
+}
+
+.navRight {
+    order: 3;
+    margin-bottom: 0.5rem;
+}
+
+.navLogo {
+    color: gray;
+    font-size: 2rem;
     text-decoration: none;
+    margin: 0 1rem;
+    font-family: 'Holtwood', sans-serif;
+
+    b {
+        color: #f25c19;
+        font-weight: 500;
+    }
 }
 
-.nav-item:hover {
-    color: lightgray;
+.navItem {
+    color: #555;
+    font-size: 0.8rem;
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Impacted', sans-serif;
+    font-weight: bolder;
+}
+
+.navItem:hover {
+    color: gray;
 }
 
 .active-nav-item {
-    color: lightgray;
+    color: gray;
+}
+
+@media (min-width: 400px) {
+    .navItem {
+        font-size: 1rem;
+    }
+
+    .navCenter {
+        text-align: center;
+        order: 1;
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    .navLeft {
+        order: 2;
+        margin-bottom: 0.5rem;
+    }
+
+    .navRight {
+        order: 3;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .navCenter {
+        text-align: center;
+        order: 2;
+        width: 45%;
+        margin-bottom: 0;
+
+        .navLogo {
+            font-size: 1.6rem;
+        }
+    }
+
+    .navLeft {
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .navRight {
+        order: 3;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .navCenter {
+        width: 450px;
+
+        .navLogo {
+            font-size: 2.5rem;
+        }
+    }
 }

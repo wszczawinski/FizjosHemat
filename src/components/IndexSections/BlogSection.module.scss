@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Impacted';
+    src: url('../../fonts/Impacted.ttf');
+}
+
+.blogArticle {
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+    margin: 15px;
+}
+
+.blogImage {
+    max-width: 100px;
+}
+
+@media (min-width: 600px) {
+    .blogArticle {
+        width: 45%;
+    }
+}
