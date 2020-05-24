@@ -1,10 +1,15 @@
 import React from 'react';
 import { Layout } from '../components';
+import img from '../images/FizjosHematLogo.svg';
 
 const MethodsPage = () => {
     return (
         <Layout>
-            <h1>Usługi</h1>
+            <img
+                style={{ width: '50vw', margin: '10vw 25vw' }}
+                src={img}
+                alt="placehold"
+            />
         </Layout>
     );
 };

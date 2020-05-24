@@ -1,9 +1,9 @@
 import React from 'react';
 import MethodElement from './MethodsSection/MethodElement';
-import method1 from '../../images/physical-therapy.svg';
-import method2 from '../../images/physiotherapy.svg';
-import method3 from '../../images/physiotherapy2.svg';
-import method4 from '../../images/rehabilitation.svg';
+import method1 from '../../images/method1.svg';
+import method2 from '../../images/method2.svg';
+import method3 from '../../images/method3.svg';
+import method4 from '../../images/method4.svg';
 import styles from './MethodsSection.module.scss';
 import { Button } from './Button';
 

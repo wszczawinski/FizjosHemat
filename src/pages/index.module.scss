@@ -5,17 +5,17 @@ html {
 }
 
 .parallax {
-    background-image: url('../images/mobile-bg2.svg');
+    background-image: url('../images/mobile-bg.svg');
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media (min-width: 500px){
+    @media (min-width: 500px) {
         background-image: url('../images/tablet-bg.svg');
     }
-    @media (min-width: 1050px){
+    @media (min-width: 1050px) {
         background-image: url('../images/desktop-bg.svg');
         background-size: cover;
     }
@@ -63,12 +63,12 @@ html {
     background-position: fixed;
 
     @media (min-width: 500px) {
- background: url(../images/tablet.svg) no-repeat;
+        background: url(../images/tablet.svg) no-repeat;
     }
 
     @media (min-width: 1100px) {
         background: url(../images/desktop.svg) no-repeat;
-           }
+    }
 
     section {
         width: 100%;
@@ -76,27 +76,12 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        // height: 90vh;
     }
-
-    // .about {
-    //     background: url('../images/bg-1.svg') center no-repeat;
-    //     background-size: cover;
-    // }
-    // .blog {
-    //     background: url('../images/bg-2.svg') center no-repeat;
-    //     background-size: cover;
-    //     height: 90vh;
-    // }
-    // .methods {
-    //     background: url('../images/bg-3.svg') center no-repeat;
-    //     background-size: cover;
-    // }
 
     @media (min-width: 500px) {
         section {
             background-position: center;
-            height: 90vh;
+            height: 80vh;
             flex-direction: row;
         }
     }

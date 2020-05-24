@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './BlogSection.module.scss';
 import { Button } from './Button';
-import blogImage from '../../images/guy.jpg';
+import blogImage from '../../images/blog_pic.jpg';
 
 export const BlogSection = () => {
     return (

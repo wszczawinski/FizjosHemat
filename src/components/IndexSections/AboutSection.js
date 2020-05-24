@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './AboutSection.module.scss';
 import { Button } from './Button';
-import MaciekImage from '../../images/Maciek-blue.png';
-import OlaImage from '../../images/Ola-black-1.png';
+import MaciekImage from '../../images/Fizjo-Maciek.png';
+import OlaImage from '../../images/Fizjo-Ola.png';
 
 export const AboutSection = () => {
     return (
