@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Impacted';
+    src: url('../../fonts/Impacted.ttf');
+}
+
+.aboutArticle {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.aboutTitle {
+    font-family: 'Impacted', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.aboutText {
+    font-size: 0.8rem;
+}
+
+.aboutImage {
+    width: 60%;
+    margin: 15px 0;
+}
+
+@media (min-width: 600px) {
+    .aboutArticle {
+        width: 40%;
+        margin: 0 15px;
+    }
+
+    .aboutTitle {
+        font-size: 1rem;
+    }
+
+    .aboutText {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .aboutArticle {
+        flex-direction: row;
+    }
+
+    .aboutTitle {
+        font-size: 1.1rem;
+    }
+
+    .aboutText {
+        font-size: 1rem;
+    }
+
+    .aboutImage {
+        width: 40%;
+    }
+
+    .aboutDescriptionLeft {
+        margin-bottom: 8vw;
+        margin-left: 20px;
+    }
+
+    .aboutDescriptionRight {
+        margin-top: 8vw;
+        margin-right: 20px;
+    }
+}
