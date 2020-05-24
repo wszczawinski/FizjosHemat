@@ -58,7 +58,17 @@ html {
 
 .home {
     justify-content: center;
-    background-color: transparent;
+    background: url(../images/mobile.svg) no-repeat;
+    background-size: contain;
+    background-position: fixed;
+
+    @media (min-width: 500px) {
+ background: url(../images/tablet.svg) no-repeat;
+    }
+
+    @media (min-width: 1100px) {
+        background: url(../images/desktop.svg) no-repeat;
+           }
 
     section {
         width: 100%;
@@ -66,24 +76,25 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        // height: 90vh;
     }
 
-    .about {
-        background: url('../images/bg-1.svg') center no-repeat;
-        background-size: cover;
-    }
-    .blog {
-        background: url('../images/bg-2.svg') center no-repeat;
-        background-size: cover;
-    }
-    .methods {
-        background: url('../images/bg-3.svg') center no-repeat;
-        background-size: cover;
-    }
+    // .about {
+    //     background: url('../images/bg-1.svg') center no-repeat;
+    //     background-size: cover;
+    // }
+    // .blog {
+    //     background: url('../images/bg-2.svg') center no-repeat;
+    //     background-size: cover;
+    //     height: 90vh;
+    // }
+    // .methods {
+    //     background: url('../images/bg-3.svg') center no-repeat;
+    //     background-size: cover;
+    // }
 
     @media (min-width: 500px) {
         section {
-            background-size: cover;
             background-position: center;
             height: 90vh;
             flex-direction: row;
