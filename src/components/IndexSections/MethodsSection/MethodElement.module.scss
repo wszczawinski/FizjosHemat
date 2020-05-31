@@ -11,22 +11,17 @@
     padding: 5%;
 }
 
-.imageContainer {
-    width: 20%;
-}
-
 .textContainer {
     margin: 0 3% 0 0;
-}
-
-.image {
-    max-height: 95%;
-    width: auto;
-    max-width: 50px;
 }
 
 .title {
     font-weight: bolder;
     font-size: 20px;
     border-bottom: 1.5px solid #f25c19;
+}
+
+.content {
+    font-size: 0.9rem;
+    text-align: justify;
 }
