@@ -3,11 +3,9 @@ import styles from './MethodElement.module.scss';
 
 function MethodElement({ title, contentText, side }) {
     return (
-        <div className={styles.methodElementContainer}>
-            <div className={styles.textContainer}>
-                <div className={styles.title}>{title}</div>
-                <div className={styles.content}>{contentText}</div>
-            </div>
+        <div className={styles.ElementContainer}>
+            <div className={styles.ElementTitle}>{title}</div>
+            <div className={styles.ElementContent}>{contentText}</div>
         </div>
     );
 }

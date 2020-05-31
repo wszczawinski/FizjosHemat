@@ -6,13 +6,12 @@ import { Button } from './Button';
 export const MethodsSection = () => {
     return (
         <>
-            <article className={styles.leftSideMethods}>
+            <article className={styles.methodsArticle}>
                 <MethodElement
                     title="Kinezyterapia"
                     contentText="Zestaw ćwiczeń dobranych przez fizjoterapeutę indywidualnie dla każdego pacjenta po to, żeby osiągnąć jak najlepszy efekt w danym przypadku. Bardzo lubimy używać pojęcia terapia szyta na miarę, które dokładnie oddaje nasze intencje."
                     side="left"
                 />
-
                 <MethodElement
                     title="Masaż"
                     contentText="Prawdopodobnie najbardziej pożądany przez pacjentów zabieg fizjoterapeutyczny. Stosowany jako element terapii, który w zależności od potrzeb może pełnić różne funkcje – przygotować tkanki do ćwiczeń, działać przeciwobrzękowo lub rozluźnić mięśnie po wysiłku."
@@ -25,7 +24,7 @@ export const MethodsSection = () => {
                 />
             </article>
             <Button text={'Metody'} link={'/mehods/'} />
-            <article className={styles.rightSideMethods}>
+            <article className={styles.methodsArticle}>
                 <MethodElement
                     title="Fizjoterapia oddechowa"
                     contentText="Terapia oddechowa uczy pacjenta technik kontroli oddechu oraz prawidłowych nawyków oddechowych. Jest kluczową, choć nadal jeszcze niedocenianym obszarem fizjoterapii. Trening oddechowy poprawia ogólny stan zdrowia, zapewnia lepszy sen, koncentrację, a także wydolność fizyczną."
