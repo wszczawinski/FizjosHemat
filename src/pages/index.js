@@ -20,9 +20,9 @@ const IndexPage = () => {
                 <section className={styles.methods}>
                     <MethodsSection />
                 </section>
-                {/* <section className={styles.blog}>
+                <section className={styles.blog}>
                     <BlogSection />
-                </section> */}
+                </section>
             </main>
         </Layout>
     );

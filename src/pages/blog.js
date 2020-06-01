@@ -25,7 +25,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            {/* <h1>Blog page</h1>
+            <h1>Blog page</h1>
             <ol>
                 {data.allMarkdownRemark.edges.map(edge => {
                     return (
@@ -37,7 +37,7 @@ const BlogPage = () => {
                         </li>
                     );
                 })}
-            </ol> */}
+            </ol>
             <img
                 style={{ width: '50vw', margin: '30vh 25vw 0 ' }}
                 src={img}
