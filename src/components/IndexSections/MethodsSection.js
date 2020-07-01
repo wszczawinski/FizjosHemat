@@ -1,47 +1,38 @@
 import React from 'react';
 import MethodElement from './MethodsSection/MethodElement';
-import method1 from '../../images/method1.svg';
-import method2 from '../../images/method2.svg';
-import method3 from '../../images/method3.svg';
-import method4 from '../../images/method4.svg';
 import styles from './MethodsSection.module.scss';
 import { Button } from './Button';
 
 export const MethodsSection = () => {
     return (
         <>
-            <article className={styles.leftSideMethods}>
+            <article className={styles.methodsArticle}>
                 <MethodElement
-                    title="Metoda"
-                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
-                    img={method2}
+                    title="Kinezyterapia"
+                    contentText="Zestaw ćwiczeń dobranych przez fizjoterapeutę indywidualnie dla każdego pacjenta po to, żeby osiągnąć jak najlepszy efekt w danym przypadku. Bardzo lubimy używać pojęcia terapia szyta na miarę, które dokładnie oddaje nasze intencje."
                     side="left"
                 />
                 <MethodElement
-                    title="Metoda"
-                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
-                    img={method3}
+                    title="Masaż"
+                    contentText="Prawdopodobnie najbardziej pożądany przez pacjentów zabieg fizjoterapeutyczny. Stosowany jako element terapii, który w zależności od potrzeb może pełnić różne funkcje – przygotować tkanki do ćwiczeń, działać przeciwobrzękowo lub rozluźnić mięśnie po wysiłku."
                     side="right"
                 />
                 <MethodElement
-                    title="Metoda"
-                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
-                    img={method4}
+                    title="Kinesiology taping"
+                    contentText="Metoda terapeutyczna polegająca na oklejaniu wybranych fragmentów ciała plastrami o specjalnej strukturze. Stosowana jako element wspomagający terapię przy łagodzeniu bólu czy obrzęku."
                     side="left"
                 />
             </article>
             <Button text={'Metody'} link={'/mehods/'} />
-            <article className={styles.rightSideMethods}>
+            <article className={styles.methodsArticle}>
                 <MethodElement
-                    title="Metoda"
-                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
-                    img={method1}
+                    title="Fizjoterapia oddechowa"
+                    contentText="Terapia oddechowa uczy pacjenta technik kontroli oddechu oraz prawidłowych nawyków oddechowych. Jest kluczową, choć nadal jeszcze niedocenianym obszarem fizjoterapii. Trening oddechowy poprawia ogólny stan zdrowia, zapewnia lepszy sen, koncentrację, a także wydolność fizyczną."
                     side="right"
                 />
                 <MethodElement
-                    title="Metoda"
-                    contentText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, cum reiciendis eius ad officia qui?"
-                    img={method1}
+                    title="PNF - people need fun"
+                    contentText="Koncepcja terapeutyczna, na którą składają się takie elementy jak pozytywne podejście do terapii, ułatwianie ruchu, bezpieczna i bezbolesna praca. Bardzo istotnym elementem jest współuczestnictwo pacjenta w planowaniu terapii – pacjent określa czynności, które sprawiają mu problem i są mu najbardziej potrzebne, a terapeuta planuje ćwiczenia tak, aby umożliwić ich przywracanie."
                     side="right"
                 />
             </article>

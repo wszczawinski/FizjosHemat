@@ -6,7 +6,7 @@ const ContactPage = () => {
     return (
         <Layout>
             <img
-                style={{ width: '50vw', margin: '10vw 25vw' }}
+                style={{ width: '50vw', margin: '30vh 25vw 0 ' }}
                 src={img}
                 alt="placehold"
             />

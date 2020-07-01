@@ -16,11 +16,12 @@ const IndexPage = () => {
                 <section className={styles.about}>
                     <AboutSection />
                 </section>
-                <section className={styles.blog}>
-                    <BlogSection />
-                </section>
+                <hr/>
                 <section className={styles.methods}>
                     <MethodsSection />
+                </section>
+                <section className={styles.blog}>
+                    <BlogSection />
                 </section>
             </main>
         </Layout>

@@ -3,30 +3,25 @@
     src: url('../../../fonts/Lato-Regular.ttf');
 }
 
-.methodElementContainer {
+@font-face {
+    font-family: 'Impacted';
+    src: url('../../../fonts/Impacted.ttf');
+}
+
+.ElementContainer {
     font-family: 'Lato';
-    display: flex;
-    height: 15%;
-    width: 85%;
-    padding: 5%;
+    margin: 20px 5%;
 }
 
-.imageContainer {
-    width: 20%;
-}
-
-.textContainer {
-    margin: 0 3% 0 0;
-}
-
-.image {
-    max-height: 95%;
-    width: auto;
-    max-width: 50px;
-}
-
-.title {
+.ElementTitle {
+    font-family: 'Impacted', sans-serif;
     font-weight: bolder;
-    font-size: 20px;
-    border-bottom: 1.5px solid #f25c19;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(244, 115, 21, 0.5);
+    margin-bottom: 20px;
+}
+
+.ElementContent {
+    font-size: 0.9rem;
+    text-align: justify;
 }
