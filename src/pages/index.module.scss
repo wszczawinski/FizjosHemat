@@ -78,6 +78,18 @@ html {
         align-items: center;
     }
 
+    hr {
+        width: 80%;
+        height: 1px;
+        background: linear-gradient(
+            to right,
+            rgba(244, 115, 21, 0.2),
+            rgba(244, 115, 21, 1),
+            rgba(244, 115, 21, 0.2)
+        );
+        border: none;
+    }
+
     @media (min-width: 500px) {
         section {
             background-position: center;

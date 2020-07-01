@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { Layout } from '../components';
 
+import img from '../images/FizjosHematLogo.svg';
+
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
@@ -36,6 +38,11 @@ const BlogPage = () => {
                     );
                 })}
             </ol>
+            <img
+                style={{ width: '50vw', margin: '30vh 25vw 0 ' }}
+                src={img}
+                alt="placehold"
+            />
         </Layout>
     );
 };

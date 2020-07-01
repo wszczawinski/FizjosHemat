@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Impacted';
+    src: url('../fonts/Impacted.ttf');
+}
+
+@font-face {
+    font-family: 'Holtwood';
+    src: url('../fonts/HoltwoodOneSC-Regular.ttf');
+}
+
+body,
+html {
+    height: 100vw;
+    margin: 0;
+}
+
+.notFound {
+    text-align: center;
+    margin-top: 30vh;
+
+    h1 {
+        font-family: 'Holtwood', sans-serif;
+        font-weight: 100;
+        font-size: 3rem;
+    }
+
+    p {
+        font-family: 'Impacted', sans-serif;
+    }
+
+    @media (min-width: 500px) {
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
