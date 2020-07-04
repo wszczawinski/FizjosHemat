@@ -20,6 +20,7 @@ const IndexPage = () => {
                 <section className={styles.methods}>
                     <MethodsSection />
                 </section>
+                <hr/>
                 <section className={styles.blog}>
                     <BlogSection />
                 </section>
