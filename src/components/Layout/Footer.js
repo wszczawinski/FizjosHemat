@@ -6,12 +6,11 @@ const Footer = () => {
         <footer className={styles.footer}>
             <article className={styles.footerContact}>
                 <h5>Contact</h5>
-                <a href="fijoshemat@gmail.com">fijzjoshemat@gmail.com</a>
+                <a href="mailto:fijzjoshemat@gmail.com">fijzjoshemat@gmail.com</a>
             </article>
             <article className={styles.footerSocials}>
                 <h5>Społecznościowe</h5>
-                <a href="">instagram</a>
-                <a href="">facebook</a>
+                
             </article>
             <article className={styles.footerLocalization}>
                 <p>Maciej</p>
@@ -19,7 +18,7 @@ const Footer = () => {
             </article>
             <article className={styles.footerCopy}>
                 <p>
-                    &copy; 2020 <a href="#">Lemme-Do</a>{' '}
+                    &copy; 2020 <a href="http://lemme-do.site">Lemme-Do</a>{' '}
                 </p>
             </article>
         </footer>

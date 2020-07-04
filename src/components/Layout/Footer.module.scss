@@ -3,4 +3,10 @@
     flex-direction: column;
     text-align: center;
     font-size: 0.8rem;
+    background: white;
+    justify-content: space-around;
+    align-items: center;
+    @media (min-width: 500px) {
+        flex-direction: row;
+    }
 }
