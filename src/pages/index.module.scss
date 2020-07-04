@@ -58,9 +58,10 @@ html {
 
 .home {
     justify-content: center;
-    background: url(../images/mobile.svg) no-repeat;
+    background: url(../images/mobile-bgg.svg) no-repeat center;
     background-size: contain;
     background-position: fixed;
+    padding: 0 10%;
 
     @media (min-width: 500px) {
         background: url(../images/tablet.svg) no-repeat;
