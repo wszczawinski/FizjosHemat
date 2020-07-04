@@ -20,7 +20,7 @@ const IndexPage = () => {
                     Brytanii i odkryliśmy wiele podobieństw w naszym podejściu do pracy z
                     pacjentami hematoonkologicznymi. Dlatego postanowiliśmy połączyć nasze
                     siły, żeby skuteczniej wspierać naszych pacjentów i siebie nawzajem,
-                    bo co dwie głowy to nie jedna.Rehabilitacja jest bardzo ważnym element
+                    bo co dwie głowy to nie jedna. Rehabilitacja jest bardzo ważnym element
                     kompleksowego leczenia pacjenta. Powinna być realizowana w każdej
                     fazie choroby i na każdym etapie jej leczenia. Dzięki działaniom
                     fizjoterapeutycznym można zapobiegać wielu powikłaniom wynikającym z
