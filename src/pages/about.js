@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './about.module.scss';
 import { Layout } from '../components';
 import OlaImage from '../images/Fizjo-Ola.png';
-import MaciekImage from '../images/Fizjo-maciek.png';
+import MaciekImage from '../images/Fizjo-Maciek.png';
 
 const AboutPage = () => {
     return (
