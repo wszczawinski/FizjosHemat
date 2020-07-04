@@ -15,7 +15,7 @@ html {
     @media (min-width: 500px) {
         background-image: url('../images/tablet-bg.svg');
     }
-    @media (min-width: 1050px) {
+    @media (min-width: 1100px) {
         background-image: url('../images/desktop-bg.svg');
         background-size: cover;
     }
@@ -58,16 +58,19 @@ html {
 
 .home {
     justify-content: center;
-    background: url(../images/mobile.svg) no-repeat;
+    background: url(../images/mobile-bgg.svg) no-repeat center;
     background-size: contain;
     background-position: fixed;
+    padding: 6% 10%;
 
     @media (min-width: 500px) {
-        background: url(../images/tablet.svg) no-repeat;
+        background: url(../images/tablet.svg) no-repeat center;
+        background-size: contain;
     }
 
     @media (min-width: 1100px) {
-        background: url(../images/desktop.svg) no-repeat;
+        background: url(../images/desktop.svg) no-repeat center;
+        background-size: contain;
     }
 
     section {
@@ -76,6 +79,7 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 4% 0;
     }
 
     hr {
@@ -93,8 +97,14 @@ html {
     @media (min-width: 500px) {
         section {
             background-position: center;
-            height: 80vh;
+            min-height: 50vh;
             flex-direction: row;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        hr {
+            visibility: hidden;
         }
     }
 }

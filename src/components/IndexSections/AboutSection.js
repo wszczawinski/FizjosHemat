@@ -14,9 +14,9 @@ export const AboutSection = () => {
                 >
                     <h3 className={styles.aboutTitle}>mgr Aleksandra Bulińska</h3>
                     <p className={styles.aboutText}>
-                        Kierują się holistycznym spojrzeniem, dbam nie tylko o naprawienie
+                        Kieruję się holistycznym spojrzeniem, dbam nie tylko o naprawienie
                         problemu fizycznego, ale również zwracam baczną uwagę na
-                        poprawienie ogólnej jakości życia pacjenta. Największym wyzwaniem
+                        poprawienie ogólnej <strong>jakości życia</strong> pacjenta. Największym wyzwaniem
                         jest dla mnie praca z pacjentami przygotowującymi się do
                         transplantacji krwiotwórczych komórek macierzystych szpiku oraz w
                         trakcie tej procedury. Poza hematologią duży obszar moich
@@ -34,8 +34,8 @@ export const AboutSection = () => {
                         Jestem pasjonatem ruchu i możliwości ludzkiego ciała. Do każdego
                         pacjenta podchodzę indywidualnie, bazując na jego aktualnych
                         możliwościach. Najważniejsze dla mnie w mojej pracy jest pozytywne
-                        nastawienie, wiara w osiągnięciu wspólnego celu i dbałość o jak
-                        najlepszą jakość życia moich pacjentów. Poza onkologią,
+                        nastawienie, wiara w osiągnięcie wspólnego celu i dbałość o jak
+                        najlepszą <strong>jakość życia</strong> moich pacjentów. Poza onkologią,
                         specjalizuje się w fizjoterapii po urazach i operacjach
                         ortopedycznych oraz chorobach i zespołach bólowych kręgosłupa.
                     </p>
