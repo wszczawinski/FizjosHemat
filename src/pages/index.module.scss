@@ -10,7 +10,7 @@ html {
 }
 
 .parallax {
-    background-image: url('../images/mobile-bg.svg');
+    background-image: url('../images/mobile-hero.svg');
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -18,10 +18,10 @@ html {
     background-size: contain;
 
     @media (min-width: 500px) {
-        background-image: url('../images/tablet-bg.svg');
+        background-image: url('../images/tablet-hero.svg');
     }
     @media (min-width: 1100px) {
-        background-image: url('../images/desktop-bg.svg');
+        background-image: url('../images/desktop-hero.svg');
         background-size: cover;
     }
 }
@@ -63,18 +63,18 @@ html {
 
 .home {
     justify-content: center;
-    background: url(../images/mobile-bgg.svg) no-repeat center;
+    background: url(../images/mobile-index-bg.svg) no-repeat center;
     background-size: contain;
     background-position: fixed;
     padding: 0 10%;
 
     @media (min-width: 500px) {
-        background: url(../images/tablet.svg) no-repeat center;
+        background: url(../images/tablet-index-bg.svg) no-repeat center;
         background-size: contain;
     }
 
     @media (min-width: 1100px) {
-        background: url(../images/desktop.svg) no-repeat center;
+        background: url(../images/desktop-index-bg.svg) no-repeat center;
         background-size: contain;
     }
 
