@@ -8,9 +8,23 @@ const AboutPage = () => {
     return (
         <Layout>
             <main className={styles.aboutContainer}>
+                <p className={styles.interSection}>
+                    <strong>Witamy!</strong> Nazywamy się Ola i Maciek, jesteśmy
+                    magistrami fizjoterapii. Pracujemy w dwóch klinikach hematologii - UCK
+                    w Gdańsku i UCK w Warszawie. Poznaliśmy się na sympozjum w Wielkiej
+                    Brytanii i odkryliśmy wiele podobieństw w naszym podejściu do pracy z
+                    pacjentami hematoonkologicznymi. Dlatego postanowiliśmy połączyć nasze
+                    siły, żeby skuteczniej wspierać naszych pacjentów i siebie nawzajem,
+                    bo co dwie głowy to nie jedna. Rehabilitacja jest bardzo ważnym
+                    element kompleksowego leczenia pacjenta. Powinna być realizowana w
+                    każdej fazie choroby i na każdym etapie jej leczenia. Dzięki
+                    działaniom fizjoterapeutycznym można zapobiegać wielu powikłaniom
+                    wynikającym z leczenia przeciwnowotworowego, a w przypadku ich
+                    wystąpienia znacznie je zmniejszać, a nawet całkowicie redukować.
+                </p>
+                <h2 className={styles.aboutTitle}>mgr Aleksandra Bulińska</h2>
                 <section className={styles.aboutSection}>
                     <div className={styles.column}>
-                        <h2>mgr Aleksandra Bulińska</h2>
                         <img
                             className={styles.aboutImage}
                             src={OlaImage}
@@ -49,9 +63,9 @@ const AboutPage = () => {
                         </p>
                     </div>
                 </section>
+                <h2 className={styles.aboutTitle}>mgr Maciej Koktysz</h2>
                 <section className={styles.aboutSection}>
                     <div className={styles.column}>
-                        <h2>mgr Maciej Koktysz</h2>
                         <img
                             className={styles.aboutImage}
                             src={MaciekImage}
