@@ -9,18 +9,18 @@ const AboutPage = () => {
         <Layout>
             <main className={styles.aboutContainer}>
                 <p className={styles.interSection}>
-                    <strong>Witamy!</strong> Nazywamy się Ola i Maciek, jesteśmy
-                    magistrami fizjoterapii. Pracujemy w dwóch klinikach hematologii - UCK
-                    w Gdańsku i UCK w Warszawie. Poznaliśmy się na sympozjum w Wielkiej
-                    Brytanii i odkryliśmy wiele podobieństw w naszym podejściu do pracy z
-                    pacjentami hematoonkologicznymi. Dlatego postanowiliśmy połączyć nasze
-                    siły, żeby skuteczniej wspierać naszych pacjentów i siebie nawzajem,
-                    bo co dwie głowy to nie jedna. Rehabilitacja jest bardzo ważnym
-                    element kompleksowego leczenia pacjenta. Powinna być realizowana w
-                    każdej fazie choroby i na każdym etapie jej leczenia. Dzięki
-                    działaniom fizjoterapeutycznym można zapobiegać wielu powikłaniom
-                    wynikającym z leczenia przeciwnowotworowego, a w przypadku ich
-                    wystąpienia znacznie je zmniejszać, a nawet całkowicie redukować.
+                    Witamy! Nazywamy się Ola i Maciek, jesteśmy magistrami fizjoterapii.
+                    Pracujemy w dwóch klinikach hematologii - UCK w Gdańsku i UCK w
+                    Warszawie. Poznaliśmy się na sympozjum w Wielkiej Brytanii i
+                    odkryliśmy wiele podobieństw w naszym podejściu do pracy z pacjentami
+                    hematoonkologicznymi. Dlatego postanowiliśmy połączyć nasze siły, żeby
+                    skuteczniej wspierać naszych pacjentów i siebie nawzajem, bo co dwie
+                    głowy to nie jedna. Rehabilitacja jest bardzo ważnym element
+                    kompleksowego leczenia pacjenta. Powinna być realizowana w każdej
+                    fazie choroby i na każdym etapie jej leczenia. Dzięki działaniom
+                    fizjoterapeutycznym można zapobiegać wielu powikłaniom wynikającym z
+                    leczenia przeciwnowotworowego, a w przypadku ich wystąpienia znacznie
+                    je zmniejszać, a nawet całkowicie redukować.
                 </p>
                 <h2 className={styles.aboutTitle}>mgr Aleksandra Bulińska</h2>
                 <section className={styles.aboutSection}>
@@ -32,7 +32,32 @@ const AboutPage = () => {
                         />
                     </div>
                     <div className={styles.column}>
-                        <p>Kursy:</p>
+                        <p>
+                            Kursy:
+                            <ul>
+                                <li>
+                                    PNF kurs podstawowy (Prioprioceptive Neuromuscular
+                                    Facilitation – Proprioceptywne torowanie nerwowo –
+                                    mięśniowe)
+                                </li>
+                                <li>Kinesiology Taping kurs podstawowy</li>
+                                <li>
+                                    Szkolenie personelu medycznego z zakresu
+                                    psychoonkologii
+                                </li>
+                                <li>Fizjoterapia osób chorych na mukowiscydozę</li>
+                                <li>
+                                    Spastyczność w uszkodzeniach ośrodkowego układu
+                                    nerwowego
+                                </li>
+                                <li>Chód w hemiplegii</li>
+                                <li>Badanie i dokumentacja medyczna w fizjoterapii</li>
+                                <li>
+                                    Badanie i fizjoterapia funkcjonalna w uszkodzeniach
+                                    stawu barkowego
+                                </li>
+                            </ul>
+                        </p>
                         <p>
                             Jestem absolwentką Fizjoterapii na Uniwersytecie Medycznym w
                             Poznaniu. Studia ukończyłam w 2010 roku. Od tego czasu

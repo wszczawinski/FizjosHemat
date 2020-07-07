@@ -22,7 +22,7 @@ const Footer = () => {
                     </div>
                 </div>
             </article>
-            <article className={styles.footerCopy}>
+            <article className={styles.copyrights}>
                 <p>
                     &copy; 2020 <a href="http://lemme-do.site">Lemme-Do</a>{' '}
                 </p>
