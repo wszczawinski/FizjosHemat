@@ -17,10 +17,12 @@
         opacity: 1;
         transition: all 0.5s;
     }
+
     a:hover {
         opacity: 0.9;
         border-bottom: 1px solid rgba(242, 92, 25, 0.8);
     }
+
     .contact {
         width: 100%;
         display: flex;
@@ -34,6 +36,7 @@
         width: 100%;
         justify-content: space-around;
     }
+
     .person {
         padding: 0 20px;
         text-align: center;
