@@ -8,20 +8,6 @@ const AboutPage = () => {
     return (
         <Layout>
             <main className={styles.aboutContainer}>
-                <p className={styles.interSection}>
-                    Witamy! Nazywamy się Ola i Maciek, jesteśmy magistrami fizjoterapii.
-                    Pracujemy w dwóch klinikach hematologii - UCK w Gdańsku i UCK w
-                    Warszawie. Poznaliśmy się na sympozjum w Wielkiej Brytanii i
-                    odkryliśmy wiele podobieństw w naszym podejściu do pracy z pacjentami
-                    hematoonkologicznymi. Dlatego postanowiliśmy połączyć nasze siły, żeby
-                    skuteczniej wspierać naszych pacjentów i siebie nawzajem, bo co dwie
-                    głowy to nie jedna. Rehabilitacja jest bardzo ważnym element
-                    kompleksowego leczenia pacjenta. Powinna być realizowana w każdej
-                    fazie choroby i na każdym etapie jej leczenia. Dzięki działaniom
-                    fizjoterapeutycznym można zapobiegać wielu powikłaniom wynikającym z
-                    leczenia przeciwnowotworowego, a w przypadku ich wystąpienia znacznie
-                    je zmniejszać, a nawet całkowicie redukować.
-                </p>
                 <h2 className={styles.aboutTitle}>mgr Aleksandra Bulińska</h2>
                 <section className={styles.aboutSection}>
                     <div className={styles.column}>
@@ -32,28 +18,28 @@ const AboutPage = () => {
                         />
                     </div>
                     <div className={styles.column}>
-                        <p>
+                        <p className={styles.courses}>
                             Kursy:
                             <ul>
                                 <li>
-                                    PNF kurs podstawowy (Prioprioceptive Neuromuscular
+                                      PNF kurs podstawowy (Prioprioceptive Neuromuscular
                                     Facilitation – Proprioceptywne torowanie nerwowo –
                                     mięśniowe)
                                 </li>
-                                <li>Kinesiology Taping kurs podstawowy</li>
+                                <li>  Kinesiology Taping kurs podstawowy</li>
                                 <li>
-                                    Szkolenie personelu medycznego z zakresu
+                                      Szkolenie personelu medycznego z zakresu
                                     psychoonkologii
                                 </li>
-                                <li>Fizjoterapia osób chorych na mukowiscydozę</li>
+                                <li>  Fizjoterapia osób chorych na mukowiscydozę</li>
                                 <li>
-                                    Spastyczność w uszkodzeniach ośrodkowego układu
+                                      Spastyczność w uszkodzeniach ośrodkowego układu
                                     nerwowego
                                 </li>
-                                <li>Chód w hemiplegii</li>
-                                <li>Badanie i dokumentacja medyczna w fizjoterapii</li>
+                                <li>  Chód w hemiplegii</li>
+                                <li>  Badanie i dokumentacja medyczna w fizjoterapii</li>
                                 <li>
-                                    Badanie i fizjoterapia funkcjonalna w uszkodzeniach
+                                      Badanie i fizjoterapia funkcjonalna w uszkodzeniach
                                     stawu barkowego
                                 </li>
                             </ul>
@@ -98,17 +84,17 @@ const AboutPage = () => {
                         />
                     </div>
                     <div className={styles.column}>
-                        <p>
+                        <p className={styles.courses}>
                             Kursy:
                             <ul>
-                                <li>Osteopatyczna Diagnostyka i Leczenie Kręgosłupa</li>
+                                <li>  Osteopatyczna Diagnostyka i Leczenie Kręgosłupa</li>
                                 <li>
-                                    FDM - Leczenie Zaburzeń Układu Mięśniowo-Szkieletowego
+                                      FDM - Leczenie Zaburzeń Układu Mięśniowo-Szkieletowego
                                     Technikami Powięziowymi
                                 </li>
-                                <li>Manualny Drenaż Limfatyczny</li>
-                                <li>Kinetic Control - Kręgosłup Lędźwiowy</li>
-                                <li>Diagnostyka i Terapia Ortopedyczna</li>
+                                <li>  Manualny Drenaż Limfatyczny</li>
+                                <li>  Kinetic Control - Kręgosłup Lędźwiowy</li>
+                                <li>  Diagnostyka i Terapia Ortopedyczna</li>
                             </ul>
                         </p>
                         <p>
