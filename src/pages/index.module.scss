@@ -1,11 +1,16 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
+}
 body,
 html {
     height: 100vw;
     margin: 0;
+    font-family: 'Lato', sans-serif;
 }
 
 .parallax {
-    background-image: url('../images/mobile-bg.svg');
+    background-image: url('../images/mobile-hero.svg');
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
@@ -13,10 +18,10 @@ html {
     background-size: contain;
 
     @media (min-width: 500px) {
-        background-image: url('../images/tablet-bg.svg');
+        background-image: url('../images/tablet-hero.svg');
     }
-    @media (min-width: 1050px) {
-        background-image: url('../images/desktop-bg.svg');
+    @media (min-width: 1100px) {
+        background-image: url('../images/desktop-hero.svg');
         background-size: cover;
     }
 }
@@ -58,16 +63,36 @@ html {
 
 .home {
     justify-content: center;
-    background: url(../images/mobile.svg) no-repeat;
+    background: url(../images/mobile-index-bg.svg) no-repeat center;
     background-size: contain;
     background-position: fixed;
+    padding: 0 10%;
 
     @media (min-width: 500px) {
-        background: url(../images/tablet.svg) no-repeat;
+        background: url(../images/tablet-index-bg.svg) no-repeat center;
+        background-size: contain;
     }
 
     @media (min-width: 1100px) {
-        background: url(../images/desktop.svg) no-repeat;
+        background: url(../images/desktop-index-bg.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .interSection {
+        color: white;
+        font-size: 0.85rem;
+        font-weight: 700;
+        margin: 5vh auto;
+        padding: 35px 25px;
+        text-align: justify;
+        border: 1px solid rgba(244, 115, 21, 0.5);
+        background-color: rgba(242, 92, 25, 0.85);
+        border-radius: 5px;
+        max-width: 800px;
+
+        @media (min-width: 500px) {
+            font-size: 0.85rem;
+        }
     }
 
     section {
@@ -76,24 +101,11 @@ html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+        padding: 4% 0;
 
-    hr {
-        width: 80%;
-        height: 1px;
-        background: linear-gradient(
-            to right,
-            rgba(244, 115, 21, 0.2),
-            rgba(244, 115, 21, 1),
-            rgba(244, 115, 21, 0.2)
-        );
-        border: none;
-    }
-
-    @media (min-width: 500px) {
-        section {
+        @media (min-width: 500px) {
             background-position: center;
-            height: 80vh;
+            min-height: 50vh;
             flex-direction: row;
         }
     }

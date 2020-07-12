@@ -4,22 +4,27 @@ import styles from './Footer.module.scss';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <article className={styles.footerContact}>
-                <h5>Contact</h5>
-                <a href="fijoshemat@gmail.com">fijzjoshemat@gmail.com</a>
+            <article className={styles.contact}>
+                <div>
+                    <h5>Kontakt</h5>
+                    <p>
+                        <a href="mailto:fijzjoshemat@gmail.com">fijzjoshemat@gmail.com</a>
+                    </p>
+                </div>
+                <div className={styles.people}>
+                    <div className={styles.person}>
+                        <h5>Aleksandra Bulińska</h5>
+                        <p>+48 600 700 800</p>
+                    </div>
+                    <div className={styles.person}>
+                        <h5>Maciej Koktysz</h5>
+                        <p>+48 600 700 800</p>
+                    </div>
+                </div>
             </article>
-            <article className={styles.footerSocials}>
-                <h5>Społecznościowe</h5>
-                <a href="">instagram</a>
-                <a href="">facebook</a>
-            </article>
-            <article className={styles.footerLocalization}>
-                <p>Maciej</p>
-                <p>Ola</p>
-            </article>
-            <article className={styles.footerCopy}>
+            <article className={styles.copyrights}>
                 <p>
-                    &copy; 2020 <a href="#">Lemme-Do</a>{' '}
+                    &copy; 2020 <a href="http://lemme-do.site">Lemme-Do</a>{' '}
                 </p>
             </article>
         </footer>
