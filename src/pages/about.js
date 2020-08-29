@@ -44,7 +44,7 @@ const AboutPage = () => {
                             </ul>
                         </p>
                     </div>
-                    <p>
+                    <p className={styles.description}>
                         Jestem absolwentką Fizjoterapii na Uniwersytecie Medycznym w
                         Poznaniu. Studia ukończyłam w 2010 roku. Od tego czasu zdobywałam
                         doświadczenie zawodowe pracując z różnymi grupami pacjentów. Mam
@@ -95,7 +95,7 @@ const AboutPage = () => {
                             </ul>
                         </p>
                     </div>
-                    <p>
+                    <p className={styles.description}>
                         Jestem absolwentem Warszawskiego Uniwersytetu Medycznego i
                         Akademii Wychowania Fizycznego w Warszawie. W 2009 roku
                         rozpocząłem współpracę z Warszawskim Stowarzyszeniem Amazonek na
