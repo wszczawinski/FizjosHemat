@@ -2,6 +2,8 @@ import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { Layout } from '../components';
 
+import styles from './blog.module.scss';
+
 const BlogPage = () => {
     const data = useStaticQuery(graphql`
         query {
@@ -11,6 +13,8 @@ const BlogPage = () => {
                         frontmatter {
                             title
                             date
+                            author
+                            description
                         }
                         fields {
                             slug
@@ -23,19 +27,26 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            <h1>Blog page</h1>
-            <ol>
-                {data.allMarkdownRemark.edges.map(edge => {
-                    return (
-                        <li>
-                            <Link to={`/blog/${edge.node.fields.slug}`}>
-                                <h2>{edge.node.frontmatter.title}</h2>
-                                <p>{edge.node.frontmatter.date}</p>
-                            </Link>
-                        </li>
-                    );
-                })}
-            </ol>
+            <main className={styles.blogContainer}>
+                <section className={styles.blogPosts}>
+                    {data.allMarkdownRemark.edges.map(edge => {
+                        return (
+                            <article className={styles.singlePost}>
+                                <Link to={`/blog/${edge.node.fields.slug}`}>
+                                    <h2>{edge.node.frontmatter.title}</h2>
+                                </Link>
+                                <p className={styles.author}>
+                                    {edge.node.frontmatter.author}
+                                </p>
+                                <p>{edge.node.frontmatter.description}</p>
+                                <p className={styles.date}>
+                                    {edge.node.frontmatter.date}
+                                </p>
+                            </article>
+                        );
+                    })}
+                </section>
+            </main>
         </Layout>
     );
 };

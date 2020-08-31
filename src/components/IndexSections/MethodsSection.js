@@ -23,7 +23,7 @@ export const MethodsSection = () => {
                     side="left"
                 />
             </article>
-            <Button text={'Metody'} link={'/mehods/'} />
+            <Button text={'Metody'} link={'/methods/'} />
             <article className={styles.methodsArticle}>
                 <MethodElement
                     title="Fizjoterapia oddechowa"
