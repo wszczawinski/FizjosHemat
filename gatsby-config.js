@@ -1,6 +1,33 @@
 module.exports = {
+    siteMetadata: {
+        author: 'Lemme-Do',
+    },
     plugins: [
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'src',
+                path: `${__dirname}/src/posts`,
+            },
+        },
+        {
+            resolve: 'gatsby-transformer-remark',
+            options: {
+                plugins: [
+                    'gatsby-remark-relative-images',
+                    {
+                        resolve: 'gatsby-remark-images',
+                        options: {
+                            maxWidth: 800,
+                            linkImagesToOriginal: false,
+                        },
+                    },
+                ],
+            },
+        },
+        `gatsby-plugin-sharp`,
         `gatsby-plugin-sass`,
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -17,30 +44,6 @@ module.exports = {
                     purpose: `maskable`,
                 },
                 cache_busting_mode: `none`,
-            },
-        },
-        `gatsby-plugin-react-helmet`,
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                name: 'src',
-                path: `${__dirname}/src/`,
-            },
-        },
-        `gatsby-plugin-sharp`,
-        {
-            resolve: 'gatsby-transformer-remark',
-            options: {
-                plugins: [
-                    'gatsby-remark-relative-images',
-                    {
-                        resolve: 'gatsby-remark-images',
-                        options: {
-                            maxWidth: 800,
-                            linkImagesToOriginal: false,
-                        },
-                    },
-                ],
             },
         },
     ],
