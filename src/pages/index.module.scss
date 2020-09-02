@@ -16,7 +16,7 @@ html {
     background-repeat: no-repeat;
     background-size: contain;
 
-    @media (min-width: 500px) {
+    @media (min-width: 600px) {
         background-image: url('../images/tablet-hero.svg');
     }
     @media (min-width: 1100px) {
@@ -69,7 +69,7 @@ html {
     background-position: fixed;
     padding: 0 10%;
 
-    @media (min-width: 500px) {
+    @media (min-width: 600px) {
         background: url(../images/tablet-index-bg.svg) no-repeat center;
         background-size: contain;
     }
@@ -80,18 +80,18 @@ html {
     }
 
     .interSection {
-        color: white;
+        color: rgba($color: #fff, $alpha: 0.9);
         font-size: 0.85rem;
         font-weight: 700;
         margin: 5vh auto;
         padding: 25px 25px;
         text-align: justify;
-        border: 1px solid rgba(244, 115, 21, 0.5);
-        background-color: rgba(242, 92, 25, 0.85);
+        box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+        background-color: rgba(242, 92, 25, 0.8);
         border-radius: 5px;
         max-width: 800px;
 
-        @media (min-width: 500px) {
+        @media (min-width: 600px) {
             font-size: 0.9rem;
         }
     }
@@ -104,7 +104,7 @@ html {
         align-items: center;
         padding: 4% 0;
 
-        @media (min-width: 500px) {
+        @media (min-width: 600px) {
             background-position: center;
             min-height: 50vh;
             flex-direction: row;

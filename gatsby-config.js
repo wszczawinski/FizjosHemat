@@ -10,7 +10,6 @@ module.exports = {
                 path: `${__dirname}/src/posts`,
             },
         },
-        `gatsby-plugin-sharp`,
         {
             resolve: 'gatsby-transformer-remark',
             options: {
@@ -26,6 +25,7 @@ module.exports = {
                 ],
             },
         },
+        `gatsby-plugin-sharp`,
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         {

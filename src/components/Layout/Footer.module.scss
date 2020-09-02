@@ -4,7 +4,7 @@
     align-self: center;
     text-align: center;
     font-size: 0.8rem;
-    background-color: rgba($color: #fff, $alpha: 0.5);
+    background-color: rgba($color: #fff, $alpha: 1);
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -40,5 +40,9 @@
     .person {
         padding: 0 20px;
         text-align: center;
+    }
+
+    @media (min-width: 600px) {
+        font-size: 0.95rem;
     }
 }
