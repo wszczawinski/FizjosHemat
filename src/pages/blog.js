@@ -31,7 +31,10 @@ const BlogPage = () => {
                 <section className={styles.blogPosts}>
                     {data.allMarkdownRemark.edges.map(edge => {
                         return (
-                            <article className={styles.singlePost}>
+                            <article
+                                className={styles.singlePost}
+                                key={edge.node.frontmatter.title}
+                            >
                                 <Link to={`/blog/${edge.node.fields.slug}`}>
                                     <h2>{edge.node.frontmatter.title}</h2>
                                 </Link>
