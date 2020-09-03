@@ -20,12 +20,12 @@ const IndexPage = () => {
                     Brytanii i odkryliśmy wiele podobieństw w naszym podejściu do pracy z
                     pacjentami hematoonkologicznymi. Dlatego postanowiliśmy połączyć nasze
                     siły, żeby skuteczniej wspierać naszych pacjentów i siebie nawzajem,
-                    bo co dwie głowy to nie jedna. Rehabilitacja jest bardzo ważnym element
-                    kompleksowego leczenia pacjenta. Powinna być realizowana w każdej
-                    fazie choroby i na każdym etapie jej leczenia. Dzięki działaniom
-                    fizjoterapeutycznym można zapobiegać wielu powikłaniom wynikającym z
-                    leczenia przeciwnowotworowego, a w przypadku ich wystąpienia znacznie
-                    je zmniejszać, a nawet całkowicie redukować.
+                    bo co dwie głowy to nie jedna. Rehabilitacja jest bardzo ważnym
+                    element kompleksowego leczenia pacjenta. Powinna być realizowana w
+                    każdej fazie choroby i na każdym etapie jej leczenia. Dzięki
+                    działaniom fizjoterapeutycznym można zapobiegać wielu powikłaniom
+                    wynikającym z leczenia przeciwnowotworowego, a w przypadku ich
+                    wystąpienia znacznie je zmniejszać, a nawet całkowicie redukować.
                 </p>
                 <section className={styles.about}>
                     <AboutSection />
@@ -42,8 +42,8 @@ const IndexPage = () => {
                     podpowiadamy rozwiązania do kontynuowania fizjoterapii w warunkach
                     domowych.
                 </p>
-                <section className={styles.methods}>
-                    <MethodsSection />
+                <section className={styles.blog}>
+                    <BlogSection />
                 </section>
                 <p className={styles.interSection}>
                     Mamy szczęście, że pracujemy w ośrodkach, w których rehabilitacja jest
@@ -51,8 +51,8 @@ const IndexPage = () => {
                     pacjentów, w którym będą mogli znaleźć wskazówki fizjoterapeutyczne na
                     czas leczenia i rekonwalescencji.
                 </p>
-                <section className={styles.blog}>
-                    <BlogSection />
+                <section className={styles.methods}>
+                    <MethodsSection />
                 </section>
             </main>
         </Layout>

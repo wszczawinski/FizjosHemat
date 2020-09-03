@@ -10,7 +10,7 @@
 
 .ElementContainer {
     font-family: 'Lato';
-    margin: 20px 5%;
+    margin: 10px 0;
 }
 
 .ElementTitle {
@@ -23,5 +23,15 @@
 
 .ElementContent {
     font-size: 0.9rem;
-    text-align: justify;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    .ElementContent {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }

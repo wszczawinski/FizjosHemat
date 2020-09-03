@@ -1,7 +1,17 @@
 import React from 'react';
 import styles from './Footer.module.scss';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    author
+                }
+            }
+        }
+    `);
     return (
         <footer className={styles.footer}>
             <article className={styles.contact}>
@@ -14,7 +24,7 @@ const Footer = () => {
                 <div className={styles.people}>
                     <div className={styles.person}>
                         <h5>Aleksandra Bulińska</h5>
-                        <p>+48 600 700 800</p>
+                        <a href="tel:+48600286452">+48 600 286 452</a>
                     </div>
                     <div className={styles.person}>
                         <h5>Maciej Koktysz</h5>
@@ -24,7 +34,8 @@ const Footer = () => {
             </article>
             <article className={styles.copyrights}>
                 <p>
-                    &copy; 2020 <a href="http://lemme-do.site">Lemme-Do</a>{' '}
+                    &copy; 2020{' '}
+                    <a href="http://lemme-do.site">{data.site.siteMetadata.author}</a>
                 </p>
             </article>
         </footer>

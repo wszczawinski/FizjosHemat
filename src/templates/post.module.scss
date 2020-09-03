@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+.blogPostContent {
+    background-image: url('../images/mobile-about-bg.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1100px) {
+        background-image: url('../images/desktop-about-bg.svg');
+    }
+
+    .post {
+        background: rgba($color: #fff, $alpha: 0.7);
+        box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+        padding: 20px;
+        border-radius: 5px;
+        width: 90%;
+        @media (min-width: 600px) {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .content {
+            font-family: 'Lato', sans-serif;
+            padding-top: 10vh;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+.blogContainer {
+    background-image: url('../images/mobile-about-bg.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    padding-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 1100px) {
+        background-image: url('../images/desktop-about-bg.svg');
+    }
+
+    .blogPosts {
+        width: 100%;
+        @media (min-width: 600px) {
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .singlePost {
+            margin: 20px;
+            padding: 20px;
+            // border: 1px solid #f25c19;
+            box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+            border-radius: 5px;
+            background-color: rgba($color: #fff, $alpha: 0.4);
+
+            a {
+                text-decoration: none;
+                color: #f25c19;
+                transition: all 0.2s ease-in-out;
+            }
+            a:hover {
+                color: #f8570cb9;
+            }
+            .author {
+                font-style: italic;
+                color: rgb(104, 102, 102);
+            }
+            .date {
+                font-size: 0.85em;
+                color: rgb(104, 102, 102);
+            }
+        }
+    }
+}
