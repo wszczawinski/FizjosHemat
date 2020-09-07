@@ -8,6 +8,7 @@ const Head = () => {
             <title>FizjosHemat</title>
             <meta name="description" content="Blog na temat fizjoterapi w hematologi." />
             <meta name="keywords" content="fizjoteratia, hematologia" />
+            <meta name="author" content="Lemme-Do" />
         </Helmet>
     );
 };

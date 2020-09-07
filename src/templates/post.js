@@ -22,7 +22,7 @@ const Blog = props => {
         <Layout>
             <main className={styles.blogPostContent}>
                 <section className={styles.post}>
-                    <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+                    <h2>{props.data.markdownRemark.frontmatter.title}</h2>
                     <p>{props.data.markdownRemark.frontmatter.date}</p>
                     <p>{props.data.markdownRemark.frontmatter.author}</p>
                     <div
