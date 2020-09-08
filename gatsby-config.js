@@ -4,6 +4,13 @@ module.exports = {
     },
     plugins: [
         {
+            resolve: 'gatsby-source-contentful',
+            options: {
+                spaceId: process.env.CONTENTFUL_SPACE_ID,
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+            },
+        },
+        {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'src',
@@ -33,17 +40,13 @@ module.exports = {
             options: {
                 name: `Fizjos Hemat`,
                 short_name: `Fizjos Hemat`,
-                description: `The application does cool things and makes your life better.`,
+                description: `Blog poświęcony fizjoterapii w hematologii.`,
                 lang: `en`,
                 display: 'standalone',
                 start_url: `/`,
                 background_color: `#f7f0eb`,
                 theme_color: `#fff`,
                 icon: `src/images/FizjosHematFavicon.png`,
-                icon_options: {
-                    purpose: `maskable`,
-                },
-                cache_busting_mode: `none`,
             },
         },
     ],
