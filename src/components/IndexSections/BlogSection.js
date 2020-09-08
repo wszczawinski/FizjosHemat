@@ -6,18 +6,14 @@ import { Button } from './Button';
 export const BlogSection = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
+            allContentfulBlogPost(sort: { fields: publishedDate, order: DESC }) {
                 edges {
                     node {
-                        frontmatter {
-                            title
-                            date
-                            author
-                            description
-                        }
-                        fields {
-                            slug
-                        }
+                        title
+                        slug
+                        publishedDate(formatString: "YYYY-MM-DD")
+                        author
+                        description
                     }
                 }
             }
@@ -26,35 +22,38 @@ export const BlogSection = () => {
     return (
         <>
             <article className={`${styles.blogArticle} ${styles.first}`}>
-                <Link to={`/blog/${data.allMarkdownRemark.edges[0].node.fields.slug}`}>
-                    <h3>{data.allMarkdownRemark.edges[0].node.frontmatter.title}</h3>
+                <Link to={`/blog/${data.allContentfulBlogPost.edges[0].node.slug}`}>
+                    <h3>{data.allContentfulBlogPost.edges[0].node.title}</h3>
                 </Link>
 
                 <p className={styles.author}>
-                    {data.allMarkdownRemark.edges[0].node.frontmatter.author}
+                    {data.allContentfulBlogPost.edges[0].node.author}
                 </p>
 
                 <p className={styles.description}>
-                    {data.allMarkdownRemark.edges[0].node.frontmatter.description}
+                    {data.allContentfulBlogPost.edges[0].node.description}
                 </p>
 
                 <p className={styles.date}>
-                    {data.allMarkdownRemark.edges[0].node.frontmatter.date}
+                    {data.allContentfulBlogPost.edges[0].node.publishedDate}
                 </p>
             </article>
             <Button text={'Blog'} link={'/blog/'} />
             <article className={`${styles.blogArticle} ${styles.second}`}>
-                <Link to={`/blog/${data.allMarkdownRemark.edges[1].node.fields.slug}`}>
-                    <h3>{data.allMarkdownRemark.edges[1].node.frontmatter.title}</h3>
+                <Link to={`/blog/${data.allContentfulBlogPost.edges[1].node.slug}`}>
+                    <h3>{data.allContentfulBlogPost.edges[1].node.title}</h3>
                 </Link>
+
                 <p className={styles.author}>
-                    {data.allMarkdownRemark.edges[1].node.frontmatter.author}
+                    {data.allContentfulBlogPost.edges[1].node.author}
                 </p>
-                <p className={styles.blogText}>
-                    {data.allMarkdownRemark.edges[1].node.frontmatter.description}
+
+                <p className={styles.description}>
+                    {data.allContentfulBlogPost.edges[1].node.description}
                 </p>
+
                 <p className={styles.date}>
-                    {data.allMarkdownRemark.edges[1].node.frontmatter.date}
+                    {data.allContentfulBlogPost.edges[1].node.publishedDate}
                 </p>
             </article>
         </>
