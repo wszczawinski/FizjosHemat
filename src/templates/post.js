@@ -35,17 +35,21 @@ const Blog = props => {
         <Layout>
             <main className={styles.blogPostContent}>
                 <section className={styles.post}>
-                    <h1>{props.data.contentfulBlogPost.title}</h1>
-                    <p>{props.data.contentfulBlogPost.publishedDate}</p>
-                    <p>{props.data.contentfulBlogPost.author}</p>
-                    <p>{props.data.contentfulBlogPost.description}</p>
-
+                    <h2 className={styles.title}>
+                        {props.data.contentfulBlogPost.title}
+                    </h2>
+                    <p className={styles.author}>
+                        {props.data.contentfulBlogPost.author}
+                    </p>
                     <div className={styles.content}>
                         {documentToReactComponents(
                             props.data.contentfulBlogPost.body.json,
                             options
                         )}
                     </div>
+                    <p className={styles.date}>
+                        {props.data.contentfulBlogPost.publishedDate}
+                    </p>
                 </section>
             </main>
         </Layout>

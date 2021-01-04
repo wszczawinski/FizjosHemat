@@ -4,7 +4,7 @@
   "description": "FizjosHemat blog application.",
   "version": "0.1.0",
   "scripts": {
-    "build": "gatsby build",
+    "build": "env-cmd -f .env.prod gatsby build",
     "develop": "env-cmd -f .env.dev gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
