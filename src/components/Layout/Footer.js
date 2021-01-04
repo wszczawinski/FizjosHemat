@@ -28,15 +28,14 @@ const Footer = () => {
                     </div>
                     <div className={styles.person}>
                         <h5>Maciej Koktysz</h5>
-                        <p>+48 600 700 800</p>
+                        <a href="tel:+48696440062">+48 696 440 062</a>
                     </div>
                 </div>
             </article>
             <article className={styles.copyrights}>
-                <p>
-                    &copy; 2020{' '}
-                    <a href="http://lemme-do.site">{data.site.siteMetadata.author}</a>
-                </p>
+                <a href="https://wojtekszczawinski.site/" target="blank">
+                    &copy; {data.site.siteMetadata.author}
+                </a>
             </article>
         </footer>
     );
